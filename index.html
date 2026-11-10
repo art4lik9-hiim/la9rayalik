@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La9rayaLik — Politique de confidentialité / Privacy Policy</title>
+<meta name="description" content="Politique de confidentialité de l'application La9rayaLik — Privacy Policy of the La9rayaLik app.">
+<meta name="theme-color" content="#059669">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  :root{
+    --em-50:#ecfdf5; --em-100:#d1fae5; --em-200:#a7f3d0; --em-500:#10b981; --em-600:#059669;
+    --em-700:#047857; --em-800:#065f46; --em-900:#064e3b; --gold:#f59e0b; --gold-light:#fef3c7;
+    --text:#1f2937; --muted:#4b6358; --border:#d9efe3; --bg:#ffffff;
+    --shadow:0 4px 18px rgba(6,95,70,.08); --shadow-lg:0 10px 30px rgba(6,95,70,.14);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.65;font-size:16px}
+  a{color:var(--em-700)} a:hover{color:var(--em-900)}
+  :target{scroll-margin-top:84px}
+  section,article,[id]{scroll-margin-top:84px}
+
+  /* ---------- top bar ---------- */
+  .topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(6,95,70,.06)}
+  .topbar-inner{max-width:980px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;
+    justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--em-800);font-weight:800;font-size:18px}
+  .brand img{width:36px;height:auto;display:block}
+  .langs{display:flex;gap:8px}
+  .lang-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:999px;text-decoration:none;
+    font-weight:700;font-size:14px;color:var(--em-700);background:var(--em-50);border:2px solid var(--em-200);
+    transition:all .15s ease}
+  .lang-btn:hover{background:var(--em-600);color:#fff;border-color:var(--em-600);transform:translateY(-1px)}
+
+  /* ---------- hero ---------- */
+  .hero{background:linear-gradient(135deg,var(--em-700),var(--em-500));color:#fff;text-align:center;padding:48px 16px 76px}
+  .hero img{width:96px;height:auto;filter:drop-shadow(0 6px 12px rgba(0,0,0,.25))}
+  .hero h1{margin:14px 0 4px;font-size:clamp(30px,6vw,44px);letter-spacing:.3px;font-weight:800}
+  .hero h1 span{color:var(--gold-light)}
+  .hero p{margin:0;font-size:clamp(17px,3vw,21px);opacity:.95;font-weight:600}
+  .hero .sub{margin-top:6px;font-size:14px;opacity:.85;font-weight:500}
+
+  main{max-width:980px;margin:-44px auto 0;padding:0 16px 40px;position:relative}
+
+  /* ---------- language blocks ---------- */
+  .doc{margin-bottom:56px}
+  .doc-head{background:#fff;border:1px solid var(--border);border-radius:24px;box-shadow:var(--shadow-lg);
+    padding:24px;margin-bottom:20px}
+  .doc-head h2{margin:0 0 6px;font-size:clamp(22px,4vw,28px);color:var(--em-800)}
+  .updated{display:inline-block;background:var(--gold-light);color:#92400e;font-weight:700;font-size:13px;
+    padding:4px 12px;border-radius:999px;margin:4px 0 12px}
+  .doc-head p{margin:0;color:var(--muted)}
+
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .toc a{font-size:13px;font-weight:600;text-decoration:none;color:var(--em-700);background:var(--em-50);
+    border:1px solid var(--em-200);border-radius:999px;padding:5px 12px}
+  .toc a:hover{background:var(--em-100)}
+
+  /* ---------- cards ---------- */
+  .card{background:#fff;border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow);
+    padding:22px 24px;margin-bottom:16px}
+  .card h3{margin:0 0 12px;font-size:19px;color:var(--em-800);display:flex;align-items:center;gap:10px}
+  .num{flex:none;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;
+    background:var(--em-600);color:#fff;font-size:14px;font-weight:800}
+  .card p{margin:0 0 10px}
+  .card p:last-child,.card ul:last-child{margin-bottom:0}
+  .card ul{margin:0 0 10px;padding-left:22px}
+  .card li{margin-bottom:6px}
+  .card li::marker{color:var(--em-600)}
+
+  .note{background:var(--em-50);border-left:5px solid var(--em-500);border-radius:12px;padding:12px 16px;margin:12px 0}
+  .warn{background:#fffbeb;border-left:5px solid var(--gold);border-radius:12px;padding:12px 16px;margin:12px 0}
+  .path{display:inline-block;background:var(--em-50);border:1px solid var(--em-200);color:var(--em-800);
+    border-radius:10px;padding:6px 12px;font-weight:700;margin:4px 0}
+
+  /* ---------- tables ---------- */
+  .table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:14px;margin:12px 0}
+  table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px}
+  th{background:var(--em-700);color:#fff;text-align:left;padding:10px 14px;font-weight:700}
+  td{padding:10px 14px;border-top:1px solid var(--border);vertical-align:top}
+  tbody tr:nth-child(even) td{background:#f7fcf9}
+  td:first-child{font-weight:700;color:var(--em-800);white-space:nowrap}
+
+  .contact-card{background:linear-gradient(135deg,var(--em-50),#fff);border-color:var(--em-200)}
+  .contact-card .who{font-size:18px;font-weight:800;color:var(--em-800)}
+
+  .top-link{display:inline-block;margin-top:6px;font-weight:700;text-decoration:none;font-size:14px}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--em-900);color:#d1fae5;text-align:center;padding:32px 16px}
+  footer a{color:#fff;font-weight:700}
+  footer .f-brand{font-size:18px;font-weight:800;color:#fff;margin-bottom:6px}
+  footer p{margin:4px 0;font-size:14px}
+
+  @media (max-width:600px){
+    .card{padding:18px 16px;border-radius:16px}
+    .doc-head{padding:18px 16px;border-radius:18px}
+    .brand span{font-size:16px}
+    td:first-child{white-space:normal}
+  }
+  @media print{.topbar,.toc,.top-link{display:none} .hero{background:#fff;color:#000;padding:10px} .card{box-shadow:none}}
+</style>
+</head>
+<body>
+
+<header class="topbar" id="top">
+  <div class="topbar-inner">
+    <a class="brand" href="#top"><img src="logo.png" alt="" onerror="this.style.display='none'"><span>La9rayaLik</span></a>
+    <nav class="langs" aria-label="Language / Langue">
+      <a class="lang-btn" href="#fr" hreflang="fr">🇫🇷 Français</a>
+      <a class="lang-btn" href="#en" hreflang="en">🇬🇧 English</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="logo.png" alt="Logo La9rayaLik" onerror="this.style.display='none'">
+  <h1>La9raya<span>Lik</span></h1>
+  <p>Politique de confidentialité</p>
+  <div class="sub">Privacy Policy</div>
+</div>
+
+<main>
+
+<!-- ===================================================== FRANÇAIS ===================================================== -->
+<div class="doc" id="fr" lang="fr">
+  <div class="doc-head">
+    <h2>🇫🇷 Politique de confidentialité — La9rayaLik</h2>
+    <span class="updated">Dernière mise à jour : 10 novembre 2026</span>
+    <p>La9rayaLik (« l'Application », « nous ») est une application mobile d'apprentissage du français (cours, quiz, romans, duels, tournois, succès). Cette politique explique quelles données nous traitons, pourquoi, comment, combien de temps, et quels sont vos droits. Elle est conforme au Règlement général sur la protection des données (RGPD) et aux règles de Google Play.</p>
+    <nav class="toc" aria-label="Sommaire">
+      <a href="#fr-1">1. Responsable</a><a href="#fr-2">2. Données</a><a href="#fr-3">3. Finalités</a>
+      <a href="#fr-4">4. Visibilité</a><a href="#fr-5">5. Firebase</a><a href="#fr-6">6. Conservation</a>
+      <a href="#fr-7">7. Suppression du compte</a><a href="#fr-8">8. Vos droits</a><a href="#fr-9">9. Sécurité</a>
+      <a href="#fr-10">10. Enfants</a><a href="#fr-11">11. Autorisations</a><a href="#fr-12">12. Modifications</a><a href="#fr-13">13. Contact</a>
+    </nav>
+  </div>
+
+  <article class="card" id="fr-1">
+    <h3><span class="num">1</span>Responsable du traitement</h3>
+    <p><strong>Haytam El Karchaoui</strong>, Morocco<br>Contact : <a href="mailto:art4lik@gmail.com"><strong>art4lik@gmail.com</strong></a></p>
+  </article>
+
+  <article class="card" id="fr-2">
+    <h3><span class="num">2</span>Données que nous collectons</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Catégorie</th><th>Données</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Compte</td><td>Adresse e-mail, mot de passe (jamais visible par nous : géré et chiffré par Firebase Authentication), identifiant utilisateur (UID)</td><td>Vous, à l'inscription</td></tr>
+        <tr><td>Profil</td><td>Nom d'utilisateur (nom affiché), avatar (avatar choisi dans la boutique ou photo que vous importez, redimensionnée et compressée)</td><td>Vous</td></tr>
+        <tr><td>Progression d'apprentissage</td><td>XP, niveau, séries (streak), cœurs, gemmes, badges et succès, cours et étapes terminés, historique des quiz, favoris et signets, progression de lecture des romans, objectif d'apprentissage choisi, statistiques d'activité</td><td>Générée par votre utilisation</td></tr>
+        <tr><td>Social</td><td>Demandes d'amis et liste d'amis, statut de présence (en ligne, occupé, absent, hors ligne)</td><td>Vous / l'Application</td></tr>
+        <tr><td>Messages</td><td>Messages <strong>prédéfinis</strong> (réactions rapides, pas de texte libre) échangés avec vos amis, avec date et état de lecture</td><td>Vous</td></tr>
+        <tr><td>Notifications</td><td>Notifications dans l'application (invitations de duel, demandes d'amis, récompenses…)</td><td>L'Application</td></tr>
+        <tr><td>Compétition</td><td>Participation aux duels, tournois, tournoi mondial, ligues hebdomadaires et classements (nom, avatar, XP, scores)</td><td>Générée par votre utilisation</td></tr>
+        <tr><td>Préférences</td><td>Langue, rappel quotidien (activé/heure)</td><td>Vous</td></tr>
+        <tr><td>Sur votre appareil</td><td>Copie locale du profil et de la session, langue, caches de contenu</td><td>L'Application</td></tr>
+      </tbody>
+    </table></div>
+    <p>Nous <strong>ne collectons pas</strong> : votre position, vos contacts, votre microphone, votre appareil photo, ni de données de paiement. L'Application ne contient <strong>aucune publicité</strong> ni outil d'analyse ou de suivi publicitaire tiers.</p>
+    <div class="note">Votre <strong>adresse e-mail</strong> est conservée uniquement dans Firebase Authentication. Elle n'est <strong>pas</strong> enregistrée dans votre profil public et n'est pas visible par les autres utilisateurs.</div>
+  </article>
+
+  <article class="card" id="fr-3">
+    <h3><span class="num">3</span>Pourquoi nous utilisons ces données</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Finalité</th><th>Base légale (RGPD)</th></tr></thead>
+      <tbody>
+        <tr><td>Créer et sécuriser votre compte, vous connecter, réinitialiser votre mot de passe</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
+        <tr><td>Fournir les fonctions : cours, quiz, progression, romans, succès, boutique d'avatars, cœurs et gemmes</td><td>Exécution du contrat</td></tr>
+        <tr><td>Fonctions sociales : amis, messages prédéfinis, présence, duels, tournois, classements</td><td>Exécution du contrat</td></tr>
+        <tr><td>Notifications dans l'application et rappel quotidien (notification locale sur votre appareil)</td><td>Exécution du contrat ; consentement pour l'autorisation de notifications du système (art. 6.1.a), que vous pouvez retirer à tout moment</td></tr>
+        <tr><td>Sécurité, prévention des abus et de la triche, bon fonctionnement du service</td><td>Intérêt légitime (art. 6.1.f)</td></tr>
+        <tr><td>Respect de nos obligations légales</td><td>Obligation légale (art. 6.1.c)</td></tr>
+      </tbody>
+    </table></div>
+    <p>Nous ne vendons pas vos données et ne les utilisons pas pour de la publicité ni du profilage.</p>
+  </article>
+
+  <article class="card" id="fr-4">
+    <h3><span class="num">4</span>Ce que voient les autres utilisateurs</h3>
+    <p>Pour que les fonctions sociales et compétitives marchent, les autres utilisateurs connectés peuvent voir votre <strong>nom affiché, avatar, niveau, XP, statistiques de jeu, badges et succès, et statut de présence</strong>. Vos amis peuvent vous envoyer des messages prédéfinis. Votre e-mail et votre mot de passe ne sont jamais visibles par les autres utilisateurs.</p>
+    <div class="warn">Ne mettez pas d'informations personnelles sensibles dans votre nom affiché ou votre photo.</div>
+  </article>
+
+  <article class="card" id="fr-5">
+    <h3><span class="num">5</span>Firebase et prestataires</h3>
+    <p>L'Application utilise <strong>Google Firebase</strong> (Google LLC / Google Ireland Limited) :</p>
+    <ul>
+      <li><strong>Firebase Authentication</strong> — inscription, connexion, réinitialisation du mot de passe (e-mail + mot de passe) ;</li>
+      <li><strong>Cloud Firestore</strong> — stockage de votre profil, progression, amis, messages et notifications.</li>
+    </ul>
+    <p>Google agit comme <strong>sous-traitant</strong> pour notre compte. Les données peuvent être traitées sur des serveurs situés en dehors de l'Espace économique européen (notamment aux États-Unis) ; ces transferts reposent sur les garanties prévues par le RGPD (clauses contractuelles types, cadre de protection des données UE–États-Unis le cas échéant). Plus d'informations : <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.</p>
+    <p>Nous ne partageons pas vos données avec d'autres tiers, sauf obligation légale.</p>
+  </article>
+
+  <article class="card" id="fr-6">
+    <h3><span class="num">6</span>Durée de conservation</h3>
+    <ul>
+      <li>Les données de votre compte et de votre profil sont conservées <strong>tant que votre compte existe</strong>.</li>
+      <li>Dès la <strong>suppression de votre compte</strong>, vos données sont effacées de notre base active (voir section 7). Des copies techniques résiduelles dans les sauvegardes du prestataire peuvent persister pendant une durée limitée avant d'être écrasées.</li>
+      <li>Les éléments listés à la section 7 comme « pouvant subsister » sont conservés tant que l'autre utilisateur ou la compétition concernée existe.</li>
+    </ul>
+  </article>
+
+  <article class="card" id="fr-7">
+    <h3><span class="num">7</span>Suppression de votre compte</h3>
+    <p>Vous pouvez supprimer définitivement votre compte <strong>à tout moment, directement dans l'application</strong> :</p>
+    <p><span class="path">Paramètres → Supprimer mon compte → saisissez votre mot de passe → confirmez</span></p>
+    <p>Cette action est <strong>irréversible</strong>. Elle supprime :</p>
+    <ul>
+      <li>votre <strong>compte</strong> (Firebase Authentication) et votre <strong>profil</strong> ;</li>
+      <li>votre <strong>progression</strong> (XP, niveaux, badges, cours, quiz, favoris, signets, lecture des romans) ;</li>
+      <li>vos <strong>demandes d'amis</strong> envoyées et reçues (donc vos liens d'amitié) ;</li>
+      <li>vos <strong>notifications</strong> ;</li>
+      <li>vos <strong>messages</strong> (votre boîte de messages) ;</li>
+      <li>votre entrée dans le classement hebdomadaire en cours.</li>
+    </ul>
+    <div class="warn"><strong>Ce qui peut subsister :</strong> les copies de messages ou de notifications que vous avez <strong>envoyées dans la boîte d'un autre utilisateur</strong>, ainsi que certains enregistrements de <strong>duels, tournois et anciens classements</strong> auxquels vous avez participé. Ils ne contiennent ni votre e-mail ni votre mot de passe, mais peuvent contenir votre identifiant technique et votre nom affiché. Vous pouvez demander leur suppression en nous écrivant à <a href="mailto:art4lik@gmail.com"><strong>art4lik@gmail.com</strong></a>.</div>
+    <div class="note"><strong>Si vous ne pouvez plus accéder à l'application</strong> (mot de passe oublié, appareil perdu…), écrivez à <a href="mailto:art4lik@gmail.com?subject=Suppression%20de%20compte%20La9rayaLik"><strong>art4lik@gmail.com</strong></a> depuis l'adresse e-mail du compte en indiquant « Suppression de compte La9rayaLik » ; nous traiterons la demande dans un délai maximum de <strong>30 jours</strong>.</div>
+  </article>
+
+  <article class="card" id="fr-8">
+    <h3><span class="num">8</span>Vos droits</h3>
+    <p>Conformément au RGPD (et, le cas échéant, aux lois locales applicables), vous disposez des droits suivants :</p>
+    <ul>
+      <li><strong>accès</strong> à vos données et copie de celles-ci ;</li>
+      <li><strong>rectification</strong> (vous pouvez modifier votre nom et votre avatar dans l'application) ;</li>
+      <li><strong>effacement</strong> (« droit à l'oubli », via la suppression du compte ci-dessus) ;</li>
+      <li><strong>limitation</strong> et <strong>opposition</strong> au traitement fondé sur l'intérêt légitime ;</li>
+      <li><strong>portabilité</strong> de vos données dans un format structuré ;</li>
+      <li><strong>retrait du consentement</strong> à tout moment (par exemple désactiver les notifications dans les réglages de votre téléphone ou de l'application) ;</li>
+      <li><strong>réclamation</strong> auprès de l'autorité de protection des données de votre pays (en France : la <a href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a>).</li>
+    </ul>
+    <p>Pour exercer ces droits : <a href="mailto:art4lik@gmail.com"><strong>art4lik@gmail.com</strong></a>. Nous répondons sous <strong>30 jours</strong> et pouvons vous demander de prouver votre identité.</p>
+  </article>
+
+  <article class="card" id="fr-9">
+    <h3><span class="num">9</span>Sécurité</h3>
+    <ul>
+      <li>Communications chiffrées (HTTPS/TLS) avec Firebase ;</li>
+      <li>mots de passe jamais stockés par nous : gérés et protégés par Firebase Authentication ;</li>
+      <li>règles de sécurité Firestore : chaque utilisateur ne peut modifier que ses propres données, et seul le propriétaire peut lire sa progression, ses messages et ses notifications ;</li>
+      <li>messages limités à des réactions prédéfinies (pas de texte libre), ce qui réduit les abus ;</li>
+      <li>l'adresse e-mail n'est pas enregistrée dans le profil lisible par les autres utilisateurs.</li>
+    </ul>
+    <p>Aucun système n'est totalement infaillible. En cas de violation de données susceptible d'engendrer un risque pour vous, nous vous informerons et informerons l'autorité compétente dans les délais légaux (72 heures pour l'autorité).</p>
+  </article>
+
+  <article class="card" id="fr-10">
+    <h3><span class="num">10</span>Vie privée des enfants</h3>
+    <p>L'Application n'est <strong>pas destinée aux enfants de moins de 13 ans</strong> et nous ne collectons pas sciemment de données auprès d'eux. Dans l'Union européenne, l'âge de consentement numérique est fixé entre 13 et 16 ans selon les pays ; en dessous de cet âge, l'utilisation requiert l'accord d'un parent ou tuteur légal. Si vous pensez qu'un enfant nous a fourni des données, contactez-nous à <a href="mailto:art4lik@gmail.com"><strong>art4lik@gmail.com</strong></a> : nous supprimerons le compte et les données concernés.</p>
+  </article>
+
+  <article class="card" id="fr-11">
+    <h3><span class="num">11</span>Autorisations de l'appareil</h3>
+    <ul>
+      <li><strong>Internet</strong> — nécessaire au fonctionnement ;</li>
+      <li><strong>Photos / fichiers</strong> — uniquement si vous choisissez d'importer une photo de profil ;</li>
+      <li><strong>Notifications</strong> — uniquement si vous les autorisez (rappel quotidien, alertes) ;</li>
+      <li><strong>Vibration</strong> — retours haptiques.</li>
+    </ul>
+  </article>
+
+  <article class="card" id="fr-12">
+    <h3><span class="num">12</span>Modifications de cette politique</h3>
+    <p>Nous pouvons mettre à jour cette politique. La date de « dernière mise à jour » ci-dessus change alors ; pour toute modification importante, nous vous en informerons dans l'Application.</p>
+  </article>
+
+  <article class="card contact-card" id="fr-13">
+    <h3><span class="num">13</span>Contact</h3>
+    <p class="who">Haytam El Karchaoui</p>
+    <p>✉️ <a href="mailto:art4lik@gmail.com"><strong>art4lik@gmail.com</strong></a><br>📍 Morocco</p>
+  </article>
+
+  <a class="top-link" href="#top">↑ Haut de page</a>
+</div>
+
+<!-- ===================================================== ENGLISH ===================================================== -->
+<div class="doc" id="en" lang="en">
+  <div class="doc-head">
+    <h2>🇬🇧 Privacy Policy — La9rayaLik</h2>
+    <span class="updated">Last updated: 10 November 2026</span>
+    <p>La9rayaLik ("the App", "we", "us") is a mobile app for learning French (courses, quizzes, novels, duels, tournaments, achievements). This policy explains what data we process, why, how, for how long, and what rights you have. It is designed to comply with the EU General Data Protection Regulation (GDPR) and Google Play's requirements.</p>
+    <nav class="toc" aria-label="Contents">
+      <a href="#en-1">1. Controller</a><a href="#en-2">2. Data</a><a href="#en-3">3. Purposes</a>
+      <a href="#en-4">4. Visibility</a><a href="#en-5">5. Firebase</a><a href="#en-6">6. Retention</a>
+      <a href="#en-7">7. Account deletion</a><a href="#en-8">8. Your rights</a><a href="#en-9">9. Security</a>
+      <a href="#en-10">10. Children</a><a href="#en-11">11. Permissions</a><a href="#en-12">12. Changes</a><a href="#en-13">13. Contact</a>
+    </nav>
+  </div>
+
+  <article class="card" id="en-1">
+    <h3><span class="num">1</span>Data controller</h3>
+    <p><strong>Haytam El Karchaoui</strong>, Morocco<br>Contact: <a href="mailto:art4lik@gmail.com"><strong>art4lik@gmail.com</strong></a></p>
+  </article>
+
+  <article class="card" id="en-2">
+    <h3><span class="num">2</span>Data we collect</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Category</th><th>Data</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Account</td><td>Email address, password (never visible to us: handled and protected by Firebase Authentication), user ID (UID)</td><td>You, at sign-up</td></tr>
+        <tr><td>Profile</td><td>Display name, avatar (an avatar chosen in the shop or a photo you import, resized and compressed)</td><td>You</td></tr>
+        <tr><td>Learning progress</td><td>XP, level, streaks, hearts, gems, badges and achievements, completed courses and stages, quiz history, favorites and bookmarks, novel reading progress, chosen learning goal, activity statistics</td><td>Generated by your use</td></tr>
+        <tr><td>Social</td><td>Friend requests and friends list, presence status (online, busy, away, offline)</td><td>You / the App</td></tr>
+        <tr><td>Messages</td><td><strong>Predefined</strong> messages (quick reactions, no free text) exchanged with friends, with date and read state</td><td>You</td></tr>
+        <tr><td>Notifications</td><td>In-app notifications (duel invitations, friend requests, rewards…)</td><td>The App</td></tr>
+        <tr><td>Competition</td><td>Participation in duels, tournaments, the global tournament, weekly leagues and leaderboards (name, avatar, XP, scores)</td><td>Generated by your use</td></tr>
+        <tr><td>Preferences</td><td>Language, daily reminder (on/off, time)</td><td>You</td></tr>
+        <tr><td>On your device</td><td>Local copy of your profile and session, language, content caches</td><td>The App</td></tr>
+      </tbody>
+    </table></div>
+    <p>We <strong>do not collect</strong> your location, contacts, microphone, camera or payment information. The App contains <strong>no advertising</strong> and no third-party analytics or ad-tracking tools.</p>
+    <div class="note">Your <strong>email address</strong> is kept only in Firebase Authentication. It is <strong>not</strong> saved in your public profile and is not visible to other users.</div>
+  </article>
+
+  <article class="card" id="en-3">
+    <h3><span class="num">3</span>Why we use your data</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Purpose</th><th>Legal basis (GDPR)</th></tr></thead>
+      <tbody>
+        <tr><td>Create and secure your account, sign you in, reset your password</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
+        <tr><td>Provide the features: courses, quizzes, progress, novels, achievements, avatar shop, hearts and gems</td><td>Performance of a contract</td></tr>
+        <tr><td>Social features: friends, predefined messages, presence, duels, tournaments, leaderboards</td><td>Performance of a contract</td></tr>
+        <tr><td>In-app notifications and the daily reminder (a local notification on your device)</td><td>Performance of a contract; consent for the system notification permission (Art. 6(1)(a)), which you can withdraw at any time</td></tr>
+        <tr><td>Security, abuse and cheating prevention, keeping the service working</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
+        <tr><td>Complying with legal obligations</td><td>Legal obligation (Art. 6(1)(c))</td></tr>
+      </tbody>
+    </table></div>
+    <p>We do not sell your data and do not use it for advertising or profiling.</p>
+  </article>
+
+  <article class="card" id="en-4">
+    <h3><span class="num">4</span>What other users can see</h3>
+    <p>For the social and competitive features to work, other signed-in users can see your <strong>display name, avatar, level, XP, game statistics, badges and achievements, and presence status</strong>. Your friends can send you predefined messages. Your email and password are never visible to other users.</p>
+    <div class="warn">Please do not put sensitive personal information in your display name or photo.</div>
+  </article>
+
+  <article class="card" id="en-5">
+    <h3><span class="num">5</span>Firebase and service providers</h3>
+    <p>The App uses <strong>Google Firebase</strong> (Google LLC / Google Ireland Limited):</p>
+    <ul>
+      <li><strong>Firebase Authentication</strong> — sign-up, sign-in, password reset (email + password);</li>
+      <li><strong>Cloud Firestore</strong> — storage of your profile, progress, friends, messages and notifications.</li>
+    </ul>
+    <p>Google acts as a <strong>data processor</strong> on our behalf. Data may be processed on servers outside the European Economic Area (including the United States); such transfers rely on GDPR safeguards (standard contractual clauses and, where applicable, the EU–US Data Privacy Framework). More information: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.</p>
+    <p>We do not share your data with any other third party, except where required by law.</p>
+  </article>
+
+  <article class="card" id="en-6">
+    <h3><span class="num">6</span>Retention</h3>
+    <ul>
+      <li>Your account and profile data are kept <strong>for as long as your account exists</strong>.</li>
+      <li>When you <strong>delete your account</strong>, your data is erased from our active database (see section 7). Residual technical copies in the provider's backups may remain for a limited period until they are overwritten.</li>
+      <li>Items listed in section 7 as "may remain" are kept for as long as the other user or the competition concerned exists.</li>
+    </ul>
+  </article>
+
+  <article class="card" id="en-7">
+    <h3><span class="num">7</span>Deleting your account</h3>
+    <p>You can permanently delete your account <strong>at any time, directly in the app</strong>:</p>
+    <p><span class="path">Settings → Delete my account ("Supprimer mon compte") → enter your password → confirm</span></p>
+    <p>This action is <strong>irreversible</strong>. It deletes:</p>
+    <ul>
+      <li>your <strong>account</strong> (Firebase Authentication) and <strong>profile</strong>;</li>
+      <li>your <strong>progress</strong> (XP, levels, badges, courses, quizzes, favorites, bookmarks, novel reading);</li>
+      <li>your sent and received <strong>friend requests</strong> (and therefore your friendships);</li>
+      <li>your <strong>notifications</strong>;</li>
+      <li>your <strong>messages</strong> (your own mailbox);</li>
+      <li>your entry in the current weekly leaderboard.</li>
+    </ul>
+    <div class="warn"><strong>What may remain:</strong> copies of messages or notifications you <strong>sent into another user's mailbox</strong>, and some <strong>duel, tournament and past-leaderboard records</strong> you took part in. They contain neither your email nor your password, but may contain your technical ID and display name. You can ask us to delete them by writing to <a href="mailto:art4lik@gmail.com"><strong>art4lik@gmail.com</strong></a>.</div>
+    <div class="note"><strong>If you can no longer access the app</strong> (forgotten password, lost device…), email <a href="mailto:art4lik@gmail.com?subject=La9rayaLik%20account%20deletion"><strong>art4lik@gmail.com</strong></a> from the account's email address with the subject "La9rayaLik account deletion"; we will handle the request within <strong>30 days</strong>.</div>
+  </article>
+
+  <article class="card" id="en-8">
+    <h3><span class="num">8</span>Your rights</h3>
+    <p>Under the GDPR (and, where applicable, local laws) you have the right to:</p>
+    <ul>
+      <li><strong>access</strong> your data and obtain a copy;</li>
+      <li><strong>rectification</strong> (you can change your name and avatar in the app);</li>
+      <li><strong>erasure</strong> ("right to be forgotten", through account deletion above);</li>
+      <li><strong>restriction</strong> of processing and <strong>objection</strong> to processing based on legitimate interests;</li>
+      <li><strong>data portability</strong> in a structured format;</li>
+      <li><strong>withdraw consent</strong> at any time (for example, turn off notifications in your phone or app settings);</li>
+      <li><strong>lodge a complaint</strong> with the data protection authority in your country.</li>
+    </ul>
+    <p>To exercise these rights: <a href="mailto:art4lik@gmail.com"><strong>art4lik@gmail.com</strong></a>. We respond within <strong>30 days</strong> and may ask you to verify your identity.</p>
+  </article>
+
+  <article class="card" id="en-9">
+    <h3><span class="num">9</span>Security</h3>
+    <ul>
+      <li>Encrypted communication (HTTPS/TLS) with Firebase;</li>
+      <li>passwords are never stored by us: they are handled and protected by Firebase Authentication;</li>
+      <li>Firestore security rules: each user can only modify their own data, and only the owner can read their progress, messages and notifications;</li>
+      <li>messages are limited to predefined reactions (no free text), which reduces abuse;</li>
+      <li>your email address is not stored in the profile readable by other users.</li>
+    </ul>
+    <p>No system is completely infallible. If a data breach is likely to put you at risk, we will notify you and the competent authority within the legal deadlines (72 hours for the authority).</p>
+  </article>
+
+  <article class="card" id="en-10">
+    <h3><span class="num">10</span>Children's privacy</h3>
+    <p>The App is <strong>not directed to children under 13</strong> and we do not knowingly collect data from them. In the European Union the age of digital consent is between 13 and 16 depending on the country; below that age, use requires the consent of a parent or legal guardian. If you believe a child has provided us with data, contact <a href="mailto:art4lik@gmail.com"><strong>art4lik@gmail.com</strong></a> and we will delete the account and data concerned.</p>
+  </article>
+
+  <article class="card" id="en-11">
+    <h3><span class="num">11</span>Device permissions</h3>
+    <ul>
+      <li><strong>Internet</strong> — required for the App to work;</li>
+      <li><strong>Photos / files</strong> — only if you choose to import a profile photo;</li>
+      <li><strong>Notifications</strong> — only if you allow them (daily reminder, alerts);</li>
+      <li><strong>Vibration</strong> — haptic feedback.</li>
+    </ul>
+  </article>
+
+  <article class="card" id="en-12">
+    <h3><span class="num">12</span>Changes to this policy</h3>
+    <p>We may update this policy. The "last updated" date above will change; for material changes we will notify you in the App.</p>
+  </article>
+
+  <article class="card contact-card" id="en-13">
+    <h3><span class="num">13</span>Contact</h3>
+    <p class="who">Haytam El Karchaoui</p>
+    <p>✉️ <a href="mailto:art4lik@gmail.com"><strong>art4lik@gmail.com</strong></a><br>📍 Morocco</p>
+  </article>
+
+  <a class="top-link" href="#top">↑ Back to top</a>
+</div>
+
+</main>
+
+<footer>
+  <div class="f-brand">La9rayaLik</div>
+  <p>La9rayaLik © 2026 — Tous droits réservés · All rights reserved</p>
+  <p>Contact : <a href="mailto:art4lik@gmail.com">art4lik@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
