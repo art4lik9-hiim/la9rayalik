@@ -19,7 +19,7 @@ La9rayaLik (« l'Application », « nous ») est une application mobile d'appren
 ## 1. Responsable du traitement
 
 **[Haytam El Karchaoui]**, [Morocco]
-Contact : **[art4lik@gmail.com]**
+Contact : **[art4lik9@gmail.com]**
 
 ## 2. Données que nous collectons
 
